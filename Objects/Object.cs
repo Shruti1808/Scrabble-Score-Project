@@ -28,6 +28,11 @@ namespace ScrabbleGame.Objects
             _tenPointArray = new char[] {'Q', 'Z'};
         }
 
+        public int GetScore()
+        {
+            return _score;
+        }
+
         public int PointCount()
         {
            for (int i = 0; i < _characterArray.Length; i++)
@@ -77,6 +82,7 @@ namespace ScrabbleGame.Objects
            }
             return this._score;
         }
+
 
 
     }

@@ -1,3 +1,28 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
+
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="container">
+
+  <div class="row jumbotron">
+    <h1>Scrabble</h1>
+  </div>
+
+  <div class="row">
+    <form class="" action="/result" method="post">
+      <label for="word">Enter your word</label>
+      <input type="text" name="word">
+      <button class="btn" type="submit" name="button">Get Score!</button>
+    </form>
+  </div>
+
+
+  <div class="row">
+@if (@Model != null)
+{
+<p>@Model.PointCount()</p>
+}
+</div>
