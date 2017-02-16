@@ -36,15 +36,3 @@ Output: 3 + 1 + 1 =5
 The program will only take characters and strings, no numbers.
 Input: 3
 Output: "Please Enter a Word"
-
-
-<!--
-// private string[] _threePointArray;
-// private string[] _fourPointArray;
-// private string[] _eightPointArray;
-// private string[] _tenPointArray;
-// ;
-    // 
-    // string[] _fourPointArray = {"F", "H", "V", "W", "Y"};
-    // string[] _eightPointArray = {"J", "X"};
-    // string[] _tenPointArray = {"Q", "Z"}; -->

@@ -11,6 +11,9 @@ namespace ScrabbleGame.Objects
         private char[] _onePointArray;
         private char[] _twoPointArray;
         private char[] _threePointArray;
+        private char[] _fourPointArray;
+        private char[] _eightPointArray;
+        private char[] _tenPointArray;
 
         public Scrabble(string word)
         {
@@ -20,6 +23,9 @@ namespace ScrabbleGame.Objects
             _onePointArray = new char[] {'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'};
             _twoPointArray = new char[] {'D', 'G'};
             _threePointArray = new char[] {'B', 'C', 'M', 'P'};
+            _fourPointArray = new char[] {'F', 'H', 'V', 'W', 'Y'};
+            _eightPointArray = new char[] {'J', 'X'};
+            _tenPointArray = new char[] {'Q', 'Z'};
         }
 
         public int PointCount()
@@ -47,8 +53,29 @@ namespace ScrabbleGame.Objects
                      _score += 3;
                  }
                }
+               for (int m= 0; m < _fourPointArray.Length; m++)
+               {
+                 if(_characterArray[i] == _fourPointArray[m])
+                 {
+                     _score += 4;
+                 }
+               }
+               for (int n= 0; n < _eightPointArray.Length; n++)
+               {
+                 if(_characterArray[i] == _eightPointArray[n])
+                 {
+                     _score += 8;
+                 }
+               }
+               for (int o= 0; o < _tenPointArray.Length; o++)
+               {
+                 if(_characterArray[i] == _tenPointArray[o])
+                 {
+                     _score += 10;
+                 }
+               }
            }
-            return _score;
+            return this._score;
         }
 
 
