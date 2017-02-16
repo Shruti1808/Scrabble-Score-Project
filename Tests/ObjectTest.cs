@@ -36,5 +36,18 @@ namespace ScrabbleGameTest
             //assert
             Assert.Equal(score, result);
         }
+        [Fact]
+        public void testScore_addThreePointAlphabets_Score3()
+        {
+            //arrange
+            string word = "B" ;
+            int score = 3;
+            Scrabble newScrabble = new Scrabble(word);
+            //act
+            int result = newScrabble.PointCount();
+            Console.WriteLine(result);
+            //assert
+            Assert.Equal(score, result);
+        }
     }
 }

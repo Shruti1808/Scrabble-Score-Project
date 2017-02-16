@@ -10,6 +10,7 @@ namespace ScrabbleGame.Objects
         private char[] _characterArray;
         private char[] _onePointArray;
         private char[] _twoPointArray;
+        private char[] _threePointArray;
 
         public Scrabble(string word)
         {
@@ -17,7 +18,8 @@ namespace ScrabbleGame.Objects
             _score = 0;
             _characterArray = word.ToUpper().ToCharArray();
             _onePointArray = new char[] {'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'};
-             _twoPointArray = new char[] {'D', 'G'};
+            _twoPointArray = new char[] {'D', 'G'};
+            _threePointArray = new char[] {'B', 'C', 'M', 'P'};
         }
 
         public int PointCount()
@@ -36,6 +38,13 @@ namespace ScrabbleGame.Objects
                  if(_characterArray[i] == _twoPointArray[k])
                  {
                      _score += 2;
+                 }
+               }
+               for (int l= 0; l < _threePointArray.Length; l++)
+               {
+                 if(_characterArray[i] == _threePointArray[l])
+                 {
+                     _score += 3;
                  }
                }
            }

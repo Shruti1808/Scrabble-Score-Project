@@ -44,7 +44,7 @@ Output: "Please Enter a Word"
 // private string[] _eightPointArray;
 // private string[] _tenPointArray;
 // ;
-    // string[] _threePointArray = {"B", "C", "M", "P"};
+    // 
     // string[] _fourPointArray = {"F", "H", "V", "W", "Y"};
     // string[] _eightPointArray = {"J", "X"};
     // string[] _tenPointArray = {"Q", "Z"}; -->
