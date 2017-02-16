@@ -1,9 +1,9 @@
 using Nancy;
 using System.Collections.Generic;
-using Namespace.Objects;
+using ScrabbleGame.Objects;
 
 
-namespace Namespace
+namespace ScrabbleGame
 {
     public class HomeModule : NancyModule
     {
